@@ -29,7 +29,7 @@ DPCS-B系统基于脑科学模型构建，包含以下核心组件：
 git clone https://github.com/MK60DN/dpcs-b_DIMS.git
 
 # 进入项目目录
-cd dpcs-b
+cd dpcs-b_DIMS
 
 # 安装依赖
 npm install

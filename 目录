@@ -1,0 +1,49 @@
+dpcs-b/
+├── LICENSE
+├── README.md
+├── package.json
+├── .gitignore
+├── public/
+│   ├── index.html
+│   ├── favicon.ico
+│   └── images/
+│       ├── architecture.png
+│       ├── left-brain.png
+│       ├── right-brain.png
+│       └── midbrain.png
+├── src/
+│   ├── index.js
+│   ├── App.js
+│   ├── styles/
+│   │   └── index.css
+│   ├── components/
+│   │   ├── Dashboard/
+│   │   │   ├── index.js
+│   │   │   ├── OverviewTab.js
+│   │   │   ├── WarehousesTab.js
+│   │   │   ├── TransshipmentTab.js
+│   │   │   ├── HistoryTab.js
+│   │   │   └── SettingsTab.js
+│   │   ├── Architecture/
+│   │   │   └── ArchitectureView.js
+│   │   ├── LeftBrain/
+│   │   │   └── RLModule.js
+│   │   ├── RightBrain/
+│   │   │   └── LLMModule.js
+│   │   └── common/
+│   │       ├── Header.js
+│   │       ├── Sidebar.js
+│   │       ├── NotificationBar.js
+│   │       └── WarehouseCard.js
+│   ├── services/
+│   │   ├── api.js
+│   │   ├── mockData.js
+│   │   ├── rlService.js
+│   │   └── llmService.js
+│   └── utils/
+│       ├── formatters.js
+│       └── constants.js
+└── docs/
+    ├── API.md
+    ├── ARCHITECTURE.md
+    └── SETUP.md

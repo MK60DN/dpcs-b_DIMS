@@ -1,6 +1,6 @@
 # 分布式库存调拨系统
 
-这是一个基于[MK60DN/dpcs-b](https://github.com/MK60DN/dpcs-b)仓库开发的分布式库存调拨系统，采用DPCS-B（Dual-Path Coordination System for Business）架构，融合了结构化强化学习（左脑）和语义理解（右脑）两种路径的决策能力，通过多个协调模块实现高效智能的库存管理。
+这是一个基于[MK60DN/dpcs-b]([https://github.com/MK60DN/dpcs-b_DIMS))仓库开发的分布式库存调拨系统，采用DPCS-B（Dual-Path Coordination System for Business）架构，融合了结构化强化学习（左脑）和语义理解（右脑）两种路径的决策能力，通过多个协调模块实现高效智能的库存管理。
 
 ## 系统架构
 
@@ -26,7 +26,7 @@ DPCS-B系统基于脑科学模型构建，包含以下核心组件：
 
 ```bash
 # 克隆仓库
-git clone https://github.com/MK60DN/dpcs-b.git
+git clone https://github.com/MK60DN/dpcs-b_DIMS.git
 
 # 进入项目目录
 cd dpcs-b

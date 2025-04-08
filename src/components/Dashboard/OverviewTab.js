@@ -1,7 +1,24 @@
 import React from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, PieChart, Pie, Cell } from 'recharts';
 import { Brain, Database, ShoppingCart, TrendingUp } from 'lucide-react';
-import { mockWarehouseData, mockInventoryTrends, mockForecastAccuracy } from '../../services/mockData';
+// 修改后，添加本地模拟数据:
+// 在OverviewTab.js组件内部定义模拟数据
+const mockWarehouseData = [
+  { id: 1, name: "仓库A", inventory: 100, forecastDemand: 50, status: "正常" },
+  { id: 2, name: "仓库B", inventory: 80, forecastDemand: 70, status: "注意" },
+  { id: 3, name: "仓库C", inventory: 120, forecastDemand: 60, status: "正常" },
+  { id: 4, name: "仓库D", inventory: 60, forecastDemand: 90, status: "警告" }
+];
+
+const mockInventoryTrends = [
+  { date: '03-10', '仓库A': 90, '仓库B': 75, '仓库C': 110, '仓库D': 50 },
+  { date: '03-15', '仓库A': 95, '仓库B': 70, '仓库C': 115, '仓库D': 45 },
+  { date: '03-20', '仓库A': 100, '仓库B': 65, '仓库C': 118, '仓库D': 40 },
+  { date: '03-25', '仓库A': 105, '仓库B': 70, '仓库C': 120, '仓库D': 45 },
+  { date: '03-30', '仓库A': 110, '仓库B': 75, '仓库C': 125, '仓库D': 50 },
+  { date: '04-01', '仓库A': 100, '仓库B': 80, '仓库C': 120, '仓库D': 60 },
+  { date: '04-05', '仓库A': 95, '仓库B': 90, '仓库C': 105, '仓库D': 70 }
+];
 
 const OverviewTab = ({ processingMode }) => {
   // 计算概览数据

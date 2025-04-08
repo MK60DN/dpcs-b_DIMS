@@ -1,6 +1,13 @@
 import React, { useState } from 'react';
 import { Truck, Brain, GitMerge } from 'lucide-react';
-import { mockWarehouseData } from '../../services/mockData';
+// 修改后，添加本地模拟数据:
+// 在TransshipmentTab.js组件内部定义模拟数据
+const mockWarehouseData = [
+  { id: 1, name: "仓库A", inventory: 100, forecastDemand: 50, status: "正常" },
+  { id: 2, name: "仓库B", inventory: 80, forecastDemand: 70, status: "注意" },
+  { id: 3, name: "仓库C", inventory: 120, forecastDemand: 60, status: "正常" },
+  { id: 4, name: "仓库D", inventory: 60, forecastDemand: 90, status: "警告" }
+];
 
 const TransshipmentTab = ({ processingMode, showNotification, setProcessing, processing }) => {
   const [sourceWarehouse, setSourceWarehouse] = useState('');

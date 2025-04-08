@@ -3,6 +3,8 @@ dpcs-b/
 ├── README.md
 ├── package.json
 ├── .gitignore
+├── postcss.config.js
+├── tailwind.config.js
 ├── public/
 │   ├── index.html
 │   ├── favicon.ico
